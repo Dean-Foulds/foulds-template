@@ -10,7 +10,12 @@ img {
 // override for the 'Home' navigation link
 .navbar-brand {
   font-size: inherit;
-  }
+}
+
+.navbar-default {
+    background-color: #9FA6AD;
+    border-color: #9FA6AD;
+}
 
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
