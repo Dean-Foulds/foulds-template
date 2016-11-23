@@ -1,46 +1,50 @@
 source 'https://rubygems.org'
 ruby '2.3.1'
-gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-gem 'sqlite3'
-gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
+
+gem 'rails', '5.0.0.1'
+gem 'puma'
+gem 'pg'
+gem 'figaro'
+gem 'jbuilder', '~> 2.0'
+gem 'devise', github: 'plataformatec/devise'
+gem "pundit"
+gem 'redis'
+gem "letter_opener", group: :development
+gem 'social-share-button'
+gem 'activeadmin', github: 'activeadmin/activeadmin'
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'js-routes', '~> 1.3'
+gem 'react-rails', '~> 1.8'
+gem 'acts_as_votable'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-classnames'
+end
+
+
+gem 'sass-rails'
 gem 'jquery-rails'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
+gem 'uglifier'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'
+gem 'simple_form'
+gem 'autoprefixer-rails'
+gem 'cloudinary', '1.1.0'
+gem "attachinary", github: "assembler/attachinary"
+gem "jquery-fileupload-rails"
+gem "coffee-rails"
+
+
 group :development, :test do
-  gem 'byebug', platform: :mri
-end
-group :development do
-  gem 'web-console'
-  gem 'listen', '~> 3.0.5'
-  gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
-end
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
-gem 'devise'
-gem 'devise_invitable'
-gem 'high_voltage'
-gem 'pundit'
-group :development do
+  gem 'binding_of_caller'
   gem 'better_errors'
-  gem 'foreman'
-  gem 'rails_layout'
-  gem 'spring-commands-rspec'
-end
-group :development, :test do
-  gem 'factory_girl_rails'
-  gem 'faker'
+
+  gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'pry-rescue'
-  gem 'rspec-rails'
-  gem 'rubocop'
+  gem 'spring'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+
 end
-group :test do
-  gem 'capybara'
-  gem 'database_cleaner'
-  gem 'launchy'
-  gem 'selenium-webdriver'
-end
+
+
